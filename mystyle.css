@@ -15,14 +15,27 @@ a{
 }
 /* utilities */
 .site-init{
-    height: 10px;
+    /*height: 10px;*/
 }
 
 .navigation-bar{
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px;
 }
 
+.nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.nav-link{
+    display: flex;
+    gap: 8px;
+}
 
 /*main*/
 img{
@@ -32,15 +45,17 @@ img{
 .dish-month-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
-.dish-month-img{
+.dish-month-img, .dish-month-text{
     width:50%;
     padding: 20px;
 }
-.dish-month-text{
-    width:50%;
-    padding: 20px;
 
+.dish-month-img img {
+    width: 100%;
+    display: block;
 }
 
 /* menu */
@@ -62,8 +77,6 @@ td,th{
     border-left: 0;
     border-right: 0;
 }
-
-
 
 .menu-table th{
     width: 200px;
