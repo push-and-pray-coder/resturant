@@ -13,6 +13,7 @@ a{
     color:black;
     text-decoration: none;
 }
+
 /* utilities */
 .site-init{
     /*height: 10px;*/
@@ -94,5 +95,8 @@ td,th{
     font-weight: bold;
     color:green;
 }
-/* header */
+/*Togo Page*/
+.checkout-page{
+    display:flex;
+}
 
