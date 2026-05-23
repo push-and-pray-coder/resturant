@@ -22,39 +22,33 @@
     <main>
         <div class="checkout-page">
             <div class="dish-month-img">
-                <img src="pizza.png">
+                <img src="vege.png">
             </div>
-            <div class="form-container">
+            <div  class="field-container">
                 <form>
-                    <fieldset>
-                        <legend>Place Your Order</legend>
+                    
+                        <fieldset id="pizza-selction">
+                            <legend>Select Your Pizza</legend>
+                            <label for="pepperoni"><input type="radio" id="pepperoni" name="pizza-type" value="pepperoni">Pepperoni — $10.00</label>
+                            <label for="sausage"><input type="radio" id="sausage" name="pizza-type" value="sausage">Sausage — $9.00</label>
+                            <label for="vege"><input type="radio" id="vege" name="pizza-type" value="vege">Vege — $15.00</label>
+                        </fieldset>
+                        <fieldset><legend>Choose Size</legend>
+                            <label for="small"><input type="radio" id="small" name="pizza-size" value="small">Small</label>
+                            <label for="medium"><input type="radio" id="medium" name="pizza-size" value="medium">Medium +5$</label>
+                            <label for="large"><input type="radio" id="large" name="pizza-size" value="large">Large +$10</label>
+                        </fieldset>
                         <div class="input-control">
-                            <label for="example">Example</label>
-                            <input type="text" id="example">
-                        </div>
-                        
-                    <label for="size">Size:</label>
-                        <select id="size">
-                            <option>Small</option>
-                            <option>Medium</option>
-                            <option>Large</option>
-                        </select><br>
-                        <div class="input-control">
-                            <label for="price">Price:</label>
-                            <input type="number" id="price">
+                            <label for="quantity">Quantity:<br> <input type="number" id="quantity"></label>
                         </div>
                         <div class="input-control">
-                            <label for="quantity">Quantity:</label>
-                            <input type="number" id="quantity">
+                            <label for="description">Order Notes:</label><br>
+                            <textarea id="description"  rows="10"></textarea>                        
                         </div>
-                        <div class="input-control">
-                            <label for="description">Description:</label><br>
-                            <textarea id="description"  rows="10"></textarea>                        </div>
                         <div class="input-control">
                             <input type="submit" value="Order" >
                         </div>
                     </div>
-                </fieldset>
                 </form>
             </div>
         </div>
